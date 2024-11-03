@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/morgae.css">
+  <script src="assets/js/morgae.js" defer ></script>
+  <title>Mortgage Hesaplama Aracı</title>
+</head>
+<body>
+  <div class="general-container">
+    <div class="container">
+      <h1>Mortgage Hesaplama</h1>
+      <a href="#" class="clearBtn">Hepsini Sil</a>
+      <div class="input-area">
+        <div class="input-area-price">
+          <h2>Mortgage Tutarı</h2>
+          <input type="number" value="" class="tutar">
+          <p class=" warninPrice"> This field is required</p>
+        </div>
+        <div class="input-area-term">
+          <h2>Mortgage Yılı</h2>
+          <input type="number" value="" class="yil">
+          <p class="warningYear"> This field is required</p>
+        </div>
+        <div class="input-area-rate">
+          <h2>Mortgage Oranı</h2>
+          <input type="number" value="" class="oran">
+          <p class="warningRate"> This field is required</p>
+        </div>
+        <div class="calculate-btn">
+          <button class="result-btn">Ödemeleri Hesapla</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <img src="assets/img/Layer_1.png" alt="">
+      <h3>Sonuçlar Burada Gözükecek</h3>
+      <p>Formu doldurun ve aylık ödemelerinizin ne kadar olacağını görmek için "ödemeleri hesapla"ya tıklayın.</p>
+    </div>
+    <div class="footer-show">
+      <h5>Ödeme Planı</h5>
+      <p class="middle">Sonuçlarınız, sağladığınız bilgilere göre gösterilmektedir. Sonuçları ayarlamak için formu düzenleyin "ödemeleri hesapla"ya tıklayın.</p>
+      <div class="footer-card">
+        <div class="monthly-price">
+          <span class="greySpan">Aylık Ödemeleriniz</span>
+          <h6 class="aylikOdeme">£1,797.74</h6>
+        </div>
+        <div class="yearly-price">
+          <span class="greySpan">Toplam Ödeyeceğiniz Tutar</span>
+          <h6 class="greyBig">£539,322.94</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

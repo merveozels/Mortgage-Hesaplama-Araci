@@ -1,0 +1,331 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* start here */
+
+
+.container {
+  padding-inline: 21px;
+}
+
+h1 {
+  color: rgba(19, 48, 65, 1);
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  font-size: 24px;
+  margin-top: 32px;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(78, 110, 126, 1);
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  font-style: 16px;
+  color: rgba(78, 110, 126, 1);
+}
+
+h2 {
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  font-style: 16px;
+  color: rgba(78, 110, 126, 1);
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.input-area {
+  margin-top: 24px;
+}
+
+input {
+  width: 283px;
+  height: 48px;
+  border: 1px solid rgba(107, 148, 168, 1);
+}
+
+.tutar {
+  background: url(../img/Prefix.svg) no-repeat center left;
+  text-align: right;
+}
+
+.yil {
+  background: url(../img/year.svg) no-repeat center right;
+}
+
+.oran {
+  background: url(../img/rate.svg) no-repeat center right;
+}
+
+.radioType {
+  width: 24px;
+  height: 24px;
+}
+
+button {
+  border: 1px solid transparent;
+  background: rgba(216, 219, 47, 1);
+  color: rgba(19, 48, 65, 1);
+  background: url(../img/Vector.svg ) no-repeat center left 20px rgba(216, 219, 47, 1);
+  text-align: center;
+  padding: 16px 76px;
+  border-radius: 199px;
+  font-weight: 700;
+  line-height: 22.5px;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer {
+  background-color: rgba(19, 48, 65, 1);
+  padding-inline: 24px;
+  padding-block: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+h3 {
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+p {
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(154, 190, 213, 1);
+}
+
+h5 {
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  font-size: 24px;
+  color: white;
+}
+
+.footer-show {
+  background-color: rgba(19, 48, 65, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 24px;
+  padding-inline: 24px;
+  padding-block: 32px;
+  display: none;
+  max-width: 550px;
+
+}
+.middle{
+  text-align:start ;
+}
+
+.footer-card {
+  background: rgba(0, 0, 0, 0.25);
+  border-top: 4px solid rgba(216, 219, 47, 1);
+  border-radius: 8px;
+  padding-inline: 16px;
+  padding-block: 24px;
+}
+
+.greySpan {
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(154, 190, 213, 1);
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50.4px;
+  text-align: left;
+  color: rgba(216, 219, 47, 1);
+}
+
+
+.greyBig {
+  color: white;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.shows {
+  display: flex;
+}
+
+.block {
+  display: none;
+}
+
+.red {
+  border: 2px solid red;
+}
+
+.warninPrice {
+  text-align: start;
+  color: red;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: none;
+}
+
+.warningYear {
+  text-align: start;
+  color: red;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: none;
+}
+
+.warningRate {
+  text-align: start;
+  color: red;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.monthly-price{
+  border-bottom: 1px solid  rgba(154, 190, 213, 0.25);
+  padding-bottom: 10px;
+}
+.yearly-price{
+  padding-top: 10px;
+}
+@media(width > 1200px){
+  .general-container{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+  }
+.container{
+  width:504px ;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: white;
+  height: 606px;
+
+}
+.footer{
+  width:504px ;
+  height: auto;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  height: 606px;
+}
+
+.footer-show{
+  width:504px ;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  height: 606px;
+  background-color: rgba(19, 48, 65, 1);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 34px;
+  padding-inline: 24px;
+}
+
+body{
+  background-color:rgba(228, 244, 253, 1);
+}
+}
